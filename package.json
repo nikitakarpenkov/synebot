@@ -1,0 +1,37 @@
+{
+  "name": "synebot",
+  "version": "1.0.0",
+  "description": "A Synebo Slack Bot",
+  "keywords": [
+    "Slack",
+    "bot",
+    "synebo",
+    "salesforce"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikitakarpenkov/synebot"
+  },
+  "bugs": {
+    "url": "https://github.com/nikitakarpenkov/synebot/issues"
+  },
+  "main": "lib/synebot.js",
+  "bin": {
+    "synebot": "bin/bot.js"
+  },
+  "scripts": {
+    "start": "node bin/bot.js",
+    "test": "echo 'test to be done'"
+  },
+  "author": {
+    "name": "Nikita Karpenkov",
+    "email": "nikita.karpenkov@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "slackbots": "^0.3.0"
+  }
+}

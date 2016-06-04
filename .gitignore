@@ -31,3 +31,12 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# filesystem files
+.DS_Store
+
+#do not commit real token
+token.js
+
+#do not commit database data
+/db
