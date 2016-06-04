@@ -27,7 +27,9 @@ var HelloHandler = function Constructor() {
 };
 
 HelloHandler.prototype.handle = function(message, context, replyCallback) {
-	replyCallback(this.answer + context.messages.length, null, true);
+  	context.state = context.state || { messageNumber: 0 };
+  	context.state.messageNumber++;
+	replyCallback(this.answer + ' #' + context.state.messageNumber, null, true);
 };
 
 handlers.push(new HelloHandler());
